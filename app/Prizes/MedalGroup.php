@@ -6,6 +6,6 @@ class MedalGroup extends PrizeGroup
 {
     public function items()
     {
-        return array(new Medal('list', 'numeric', 'id', 'شناسه'), 'items' => MedalType::cases());
+        return array(new Medal('list', 'numeric', 'id', 'شناسه',MedalType::convertToArray()));
     }
 }
